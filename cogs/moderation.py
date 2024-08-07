@@ -19,6 +19,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 import nextcord
 import time
 import hashlib
+import tomllib as toml
 import datetime
 from nextcord.ext import commands
 import traceback
@@ -28,8 +29,8 @@ from utils import restrictions as r
 
 override_st = False
 
-with open('config.json', 'r') as file:
-    data = json.load(file)
+with open('config.toml', 'rb') as file:
+    data = toml.load(file)
 
 externals = data["external"]
 
