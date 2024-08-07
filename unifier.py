@@ -38,7 +38,7 @@ if os.name != "nt":
         pass
 
 try:
-    with open('config.toml', 'r') as file:
+    with open('config.toml', 'rb') as file:
         data = toml.load(file)
 except:
     traceback.print_exc()
