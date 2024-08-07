@@ -14,4 +14,3 @@ emoji
 discord-emoji
 pycryptodome
 orjson
-tomllib
