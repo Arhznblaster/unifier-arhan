@@ -20,6 +20,7 @@ import nextcord
 from nextcord.ext import commands
 import aiohttp
 import asyncio
+import tomllib as toml
 import ujson as json
 import os
 import sys
