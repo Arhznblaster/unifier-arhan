@@ -65,7 +65,8 @@ if not owner_valid:
     sys.exit(1)
 
 if os.name == "nt":
-    logger.warning('You are using Windows, which Unifier does not officially support. Some features may not work.')
+    import winloop
+    logger.warning('You are using Windows, which is experimental. Some features may break.')
 
 if not '.welcome.txt' in os.listdir():
     x = open('.welcome.txt','w+')
